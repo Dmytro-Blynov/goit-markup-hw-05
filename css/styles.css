@@ -466,9 +466,6 @@ img {
 
 .form {
   display: flex;
-}
-
-.form-label {
   gap: 24px;
 }
 
