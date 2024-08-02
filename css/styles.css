@@ -702,6 +702,10 @@ img {
   text-decoration: underline;
 }
 
+.input-desc:focus-within + .desc-icon {
+  fill: #4d5ae5;
+}
+
 .accept-btn {
   display: block;
   min-width: 169px;
