@@ -53,25 +53,17 @@ a {
   padding: 24px 0;
   display: block;
   position: relative;
-  color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-link::after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
 }
 
 .address-link {
   font-style: normal;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.staff .text {
+  margin-bottom: 8px;
 }
 
 .address {
@@ -114,6 +106,7 @@ a {
   color: #fff;
   padding: 188px 0;
   max-width: 1440px;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -607,12 +600,20 @@ img {
   fill: #4d5ae5;
 }
 
+.input-desc::placeholder {
+  color: tomato;
+}
+
 .desc-icon {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  margin-left: 80px;
 }
 
 .comment {
@@ -639,6 +640,22 @@ img {
   border-color: #4d5ae5;
 }
 
+.list-content::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
+.list-content {
+  color: #404bbf;
+  position: relative;
+}
+
 .privacy-policy {
   margin-bottom: 24px;
 }
@@ -650,7 +667,7 @@ img {
   color: #8e8f99;
 }
 
-.span-policy {
+.label-policy span {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -662,6 +679,12 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
+}
+
+.input-policy:checked + .label-policy span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .input[type="checkbox"]:checked {
